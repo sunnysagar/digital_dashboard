@@ -6,7 +6,7 @@ import LandingPage from './components/LandingPage';
 function App() {
   return (
     <div className="App">
-      <Header />
+     <Header />
       <LandingPage />
       <Footer/>
     </div>
