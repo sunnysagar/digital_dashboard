@@ -1,0 +1,52 @@
+
+.service-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Space out the cards */
+    align-items: center; /* Center items vertically */
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.2); /* Slight white background */
+    backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.plan-list{
+    display: flex;
+    justify-content: space-around; /* Space out the cards */
+    align-items: center; /* Center items vertically */
+   
+}
+
+.service-card {
+    background-image: linear-gradient(63deg, rgb(20, 2, 133)16.4%, rgb(74, 1, 66)64.5%);
+    backdrop-filter: blur(10px); /* Further blur for glass effect */
+    border-radius: 10px; /* Rounded corners */
+    padding: 2rem;
+    margin: 1rem;
+    text-align: center; /* Center text */
+    color: #fff; /* White text */
+    box-shadow: 0 4px 10px rgba(251, 114, 69, 0.981); /* Card shadow */
+    border: 2px solid #fff;
+    transition: transform 0.3s; /* Transition effect for hover */
+}
+
+.service-card:hover {
+    background-image: linear-gradient(63deg, rgb(204, 187, 3)20.4%, rgb(66, 1, 58)60.5%);
+    transform: translateY(-5px); /* Lift effect on hover */
+    cursor: pointer;
+}
+
+.service-icon {
+    color: #fff; /* Color of the icons */
+    margin-bottom: 1rem; /* Space between icon and title */
+}
+
+h3 {
+    margin: 0.5rem 0; /* Space around title */
+}
+
+p {
+    font-size: 0.9rem; /* Smaller font for tagline */
+}

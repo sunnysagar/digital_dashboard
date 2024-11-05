@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './LandingPage.css';
+import ServiceSection from './Service';
 
 
 
@@ -47,26 +48,74 @@ function LandingPage() {
 
             {/* Services Section */}
             <section className="services-section">
-                <motion.h2 initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.8 }}>
-                    Our Services
-                </motion.h2>
+
+            <div className="services trust">
+    <div className="trust-content">
+        <h2 className="trust-heading">Our Unique Approach</h2>
+        <h3 className="trust-subtitle">The Smart Way to Achieve Your Goals</h3>
+        <h4 className="trust-description">
+        we stand out by offering smart, customized digital marketing strategies that drive real results. We leverage data-driven insights and innovative solutions to tailor our approach to your unique business needs, ensuring measurable growth and sustainable success. With a focus on transparent communication and constant optimization, we help you achieve your goals efficiently and effectively. Let us guide you to success in the smartest way possible!
+        </h4>
+    </div>
+    <div className='trust-img'>
+        <motion.img 
+            src="/assest/trust1.png" 
+            alt="Marketing Illustration" 
+            className="hero-image" 
+            initial={{ opacity: 0, scale: 0.9 }} 
+            animate={{ opacity: 1, scale: 1 }} 
+            transition={{ duration: 1.2 }}
+        />
+    </div>
+</div>
+
+
+
                 <div className="services">
-                    <motion.div className="service" whileHover={{ scale: 1.1 }}>
-                        <img src="https://via.placeholder.com/100" alt="Service 1" />
+                    {/* <motion.div className="service" whileHover={{ scale: 1.1 }}>
+                        <img src="https://cdn.dribbble.com/users/1603428/screenshots/4158745/media/1c1640b18e1930e6692b373351cbfdfc.gif" alt="Service 1" />
                         <h3>SEO Optimization</h3>
                         <p>Improve your search engine rankings and visibility.</p>
                     </motion.div>
                     <motion.div className="service" whileHover={{ scale: 1.1 }}>
-                        <img src="https://via.placeholder.com/100" alt="Service 2" />
+                        <img src="https://cdn.dribbble.com/users/1603428/screenshots/4158705/mob-dev.gif" alt="Service 2" />
                         <h3>Social Media Marketing</h3>
                         <p>Engage your audience on popular social media platforms.</p>
                     </motion.div>
                     <motion.div className="service" whileHover={{ scale: 1.1 }}>
-                        <img src="https://via.placeholder.com/100" alt="Service 3" />
+                        <img src="https://www.galtechlearning.com/wp-content/uploads/2023/01/third.gif" alt="Service 3" />
                         <h3>Pay-Per-Click Advertising</h3>
                         <p>Drive targeted traffic to your website quickly.</p>
+                    </motion.div> */}
+
+                    <motion.div className="service social" whileHover={{ scale: 1.1 }}>
+                        <img src="https://cdn.dribbble.com/users/2918596/screenshots/9246326/media/d2a065d587a99f32128f223b2d8e7d69.gif" alt="Service 3" />
+                        <h3>Social Media Marketing</h3>
+                        <p>Social media marketing is the use of social media platforms to connect with the audience to build the brand, increase sales, and drive website traffic.</p>
                     </motion.div>
+
+                    <motion.div className="service seo" whileHover={{ scale: 1.1 }}>
+                        <img src=" https://www.renderinfotech.com/assets/image/seo-search-enginge-optimization.gif" alt="Service 3" />
+                        <h3>SEO Optimization</h3>
+                        <p>Search engine optimization (SEO) is the art and science of getting pages to rank higher in search engines such as Google. Because search is one of the main ways in which people discover content online, ranking higher in search engines can lead to an increase in traffic to a website.</p>
+                      
+                    </motion.div>
+
+                    
+                    <motion.div className="service email" whileHover={{ scale: 1.1 }}>
+                        <img src="https://cdn.dribbble.com/users/2186444/screenshots/14905808/media/764d286e30761776a81216c7463beab8.gif" alt="Service 3" />
+                        <h3>Email Marketing</h3>
+                        <p>Email marketing is a way to promote products or services through email. Email marketing is a top digital media channel, and it is important for customers’ acquisition and retention.</p>
+                      
+                    </motion.div>   
+
+
                 </div>
+            </section>
+
+            <section className="price-tag-service">
+                <ServiceSection />
+
             </section>
 
             {/* Testimonials Section */}

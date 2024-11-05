@@ -10,12 +10,22 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
     overflow-x: hidden;
+    background-color: #fff;
     
 }
 
 .landing-page {
     text-align: center;
     background-color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between text and image */
+    padding: 2rem; /* Add padding for better spacing */
+    
 }
 
 
@@ -56,6 +66,7 @@ body {
 .hero-text h2 {
     font-size: 2.5rem;
     color: rgb(252, 254, 252);
+    
 }
 
 .hero-text p {
@@ -64,7 +75,7 @@ body {
 }
 
 .cta-button {
-    background-color: #5900ff;
+    background-color: #2eb202;
     color: white;
     border: none;
     padding: 0.8rem 1.5rem;
@@ -72,6 +83,7 @@ body {
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    font-weight: bold;
 }
 
 .cta-button:hover {
@@ -91,7 +103,7 @@ body {
 
 .services {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 2rem;
 }
 
@@ -99,14 +111,18 @@ body {
     background-color: white;
     border-radius: 8px;
     padding: 1.5rem;
-    width: 30%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    box-shadow: inset  10px 7px rgba(201, 13, 253, 0.826);
     transition: transform 0.3s ease;
 }
 
+.service:hover{
+    box-shadow: 0px 10px 7px rgba(201, 13, 253, 0.826);
+}
+
 .service img {
-    width: 80px;
-    height: 80px;
+    width: 100%;
+    height: 50%;
     margin-bottom: 1rem;
 }
 
@@ -116,8 +132,86 @@ body {
 }
 
 .service p {
-    font-size: 1rem;
-    color: #555;
+    font-size: 1.1rem;
+    color: #0c0c0c;
+}
+
+.services:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.trust{
+    margin: 0;
+    padding: 0;
+}
+
+.trust-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1; /* Allows the content to take the available space */
+    padding-right: 1rem; /* Space between text and image */
+}
+
+.trust-heading {
+    font-size: 2rem; /* Font size for heading */
+    font-weight: bold; /* Bold heading */
+    margin-bottom: 0.5rem; /* Space below heading */
+    color: #000; /* Dark text color for contrast */
+}
+
+.trust-subtitle {
+    font-size: 1.2rem; /* Font size for subtitle */
+    color: #f95204; /* Blue color for subtitle */
+    margin-bottom: 1rem; /* Space below subtitle */
+    opacity: 0; /* Start invisible for animation */
+    animation: fadeIn 1s forwards; /* Animation for subtitle */
+    animation-delay: 0.5s; /* Delay for subtitle appearance */
+}
+
+.trust-description {
+    font-size: 1rem; /* Font size for description */
+    color: #000; /* Grey text color */
+    width: 70%;
+    line-height: 1.8; /* Line height for readability */
+}
+
+.trust-img {
+    flex: 1; /* Allows the image to take the available space */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+
+    margin-top: -4%;
+}
+
+.hero-image {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+/* Animation for subtitle */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px); /* Start from above */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End at normal position */
+    }
+}
+.social h3{
+    color: #fb5f05;
+}
+
+.seo h3{
+    color: #010965;
+}
+
+.email h3{
+    color: #edc202;
 }
 
 /* Testimonials Section */
@@ -155,6 +249,10 @@ body {
     font-size: 1.1rem;
     font-weight: bold;
     color: #666;
+}
+
+.price-tag-service{
+    background: none;
 }
 
 /* Footer */
