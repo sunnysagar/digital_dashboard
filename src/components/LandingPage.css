@@ -26,11 +26,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 5rem;
-    background-image: url('/assest/back.jpg');
-    /* background-image: url('D:\sunny\Pragramming\WebD\My Web Sites\landing_page\digital_dashboard\public\assest\back.jpg'); */
-    
-   background-size: cover; /* Adjusts the image to cover the entire section */
-    background-position: center; /* Centers the image */
+ 
     background-size: 100% 100%;
     box-shadow: 0 0 10px rgba(71, 217, 243, 0.94); /* Shadow for extra depth */
     position: relative; /* To position the overlay */

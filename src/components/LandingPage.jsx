@@ -10,7 +10,20 @@ function LandingPage() {
             {/* Header */}
 
             {/* Hero Section */}
-            <section className="hero-section">
+            <section 
+
+            style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: '5rem',
+                backgroundImage: 'url("/assest/back.jpg")',
+                backgroundSize: 'cover', // or 'contain', depending on your needs
+                backgroundPosition: 'center',
+                boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',
+            }}
+
+            className="hero-section">
             <div className="your-class" style={{ backgroundImage: `url(/assest/back.jpg)` }}></div>
 
 
