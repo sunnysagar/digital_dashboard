@@ -26,41 +26,49 @@ body {
     align-items: center;
     justify-content: center;
     padding: 5rem;
-    background: 
-        radial-gradient(circle, white 40%, transparent 70%), /* Inner white center */
-        repeating-linear-gradient(
-            135deg,
-            #0e0422 0%,
-            #000128 2px,
-            #11002d 4px,
-            #360023 6px
-        ); /* Outer textured, dark border */
+    /* background-image: url("D:\sunny\Pragramming\WebD\landingPage\—Pngtree—business office colorful banner background_1117432.jpg"); */
+    background-image: url('D:\sunny\Pragramming\WebD\My Web Sites\landing_page\digital_dashboard\public\assest\back.jpg');
+    
+   background-size: cover; /* Adjusts the image to cover the entire section */
+    background-position: center; /* Centers the image */
     background-size: 100% 100%;
-   
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for extra depth */
+    box-shadow: 0 0 10px rgba(71, 217, 243, 0.94); /* Shadow for extra depth */
+    position: relative; /* To position the overlay */
+    overflow: hidden;
 }
 
-/* Style for the video to fit within the hero section */
+.your-class{
+    width: 100%;
+}
+
+
 .hero-video {
-    width: 30%;
-    max-width: 600px;
-    border-radius: 12px;
-    margin-right: 2rem;
+    width: 30%; /* Adjust based on your layout */
+    border-radius: 10px; /* Rounded corners for a polished look */
+   
+    position: relative;
+    z-index: 1; /* Ensure GIF is above the overlay */
 }
 
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 /* Hero Text */
 .hero-text h2 {
     font-size: 2.5rem;
-    color: rgb(1, 31, 1);
+    color: rgb(252, 254, 252);
 }
 
 .hero-text p {
     font-size: 1.2rem;
-    color: #333; /* Darker color for text contrast */
+    color: #fadc47; /* Darker color for text contrast */
 }
 
 .cta-button {
-    background-color: #ff8c00;
+    background-color: #5900ff;
     color: white;
     border: none;
     padding: 0.8rem 1.5rem;

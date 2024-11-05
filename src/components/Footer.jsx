@@ -73,6 +73,7 @@ const Footer = () => {
             </div>
             </div>
            
+            <div class="horizontal-line"></div>
 
             <p>© 2023 Digital Marketing Excellence | All rights reserved.</p>
         </footer>

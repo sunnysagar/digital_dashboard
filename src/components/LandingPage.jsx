@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './LandingPage.css';
 
+
+
 function LandingPage() {
     return (
         <div className="landing-page">
@@ -9,14 +11,16 @@ function LandingPage() {
 
             {/* Hero Section */}
             <section className="hero-section">
+            <div className="your-class" style={{ backgroundImage: `url(/assest/back.jpg)` }}></div>
+
 
             <motion.div className="hero-text" initial={{ x: -100 }} animate={{ x: 0 }} transition={{ duration: 1 }}>
                     <h2>Your Growth, Our Mission</h2>
                     <p>Get top-notch services in SEO, PPC, and Social Media Management</p>
                     <button className="cta-button">Get Started</button>
                 </motion.div>
-                    <motion.video 
-                        src="/assest/main_video.mp4" // Path relative to the public folder
+                    <motion.img 
+                        src="/assest/main_video.gif" // Path relative to the public folder
                         className="hero-video"
                         initial={{ opacity: 0 }} 
                         animate={{ opacity: 1 }} 

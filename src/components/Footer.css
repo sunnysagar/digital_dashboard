@@ -161,6 +161,14 @@
     color: #d0e3ff;
 }
 
+.horizontal-line {
+    width: 80%;  /* Set width as needed */
+    height: 2px;  /* Thickness of the line */
+    background-color: #ccc;  /* Line color */
+    margin: 20px auto;  /* Centering */
+}
+
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .footer {
