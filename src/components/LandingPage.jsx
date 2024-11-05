@@ -16,7 +16,7 @@ function LandingPage() {
                     <button className="cta-button">Get Started</button>
                 </motion.div>
                     <motion.video 
-                        src="/assests/main_video.mp4" // Path relative to the public folder
+                        src="/assest/main_video.mp4" // Path relative to the public folder
                         className="hero-video"
                         initial={{ opacity: 0 }} 
                         animate={{ opacity: 1 }} 
