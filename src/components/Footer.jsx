@@ -9,10 +9,15 @@ const Footer = () => {
             <div className="footer-contain">
 
             <div className="footer-left">
-                <h2 className="footer-company-name">Innovoa Place</h2>
+                <div className="logo-title">
+                <img src="/assest/logo.png" alt="logo" />
+                <div className="title-sub">
+                <h2 className="footer-company-name">Dynamix Hub</h2>
                 <p className="footer-subtitle">Innovating Your Digital Future</p>
-                
-                {/* Social Media Icons Section */}
+                </div>
+               
+                </div>
+                            {/* Social Media Icons Section */}
                 <ul className="social-media-icons">
                     <li>
                         <a href="https://www.facebook.com/login/" target="_blank" rel="noopener noreferrer">
@@ -65,6 +70,24 @@ const Footer = () => {
                     ))}
                 </ul>
             </div>
+            <div className="featues-list">
+            <h3>Featured Services </h3>
+                <ul className="footer-links">
+                    {["Search Engine Optimization", "Email Marketing", "Development Course", "", "Social Media Marketing"].map((link, index) => (
+                        <motion.li
+                            key={index}
+                            className="footer-link-item"
+                            whileHover={{ scale: 1.1, color: "#e0f7fa" }}
+                            whileTap={{ scale: 0.95 }}
+                        >
+                            <a href={`#${link.toLowerCase().replace(/ /g, "-")}`} className="footer-link">
+                                {link}
+                            </a>
+                        </motion.li>
+                    ))}
+                </ul>
+
+            </div>
             <div className="footer-right">
                 <h3>Contact Us</h3>
                 <p>123, Innovoa Street, Bangalore, Karnataka, India</p>
@@ -75,7 +98,7 @@ const Footer = () => {
            
             <div class="horizontal-line"></div>
 
-            <p>© 2023 Digital Marketing Excellence | All rights reserved.</p>
+            <p>© 2023 Dynamix Hub | All rights reserved.</p>
         </footer>
     );
 };

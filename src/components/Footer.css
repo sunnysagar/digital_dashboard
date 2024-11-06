@@ -32,7 +32,24 @@
 .footer-left {
     flex: 1;
     min-width: 250px;
+    display: flex;
+    flex-direction: column;
     
+    
+}
+.logo-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-title img{
+    width: 80px;
+    height: 80px;
+}
+
+.footer-left img{
+    width: 120px;
+    height: 100px;
 }
 
 .footer-company-name {

@@ -5,6 +5,7 @@ import ServiceSection from './Service';
 import AnimatedButton from './AnimatedButton';
 import StrategySection from './Strategies';
 import CourseContent from './Course';
+import TestimonialCarousel from './Testimonial';
 
 
 
@@ -123,24 +124,57 @@ function LandingPage() {
                  
             </section>
 
+            <section className="static-positive-div">
+                <div className='image-container'>
+                <motion.img 
+                src="/assest/panel.png" 
+                alt="Marketing Illustration" 
+                className="panel-image" 
+                initial={{ opacity: 0.3, scale: 0.9 }} 
+                animate={{ opacity: 1, scale: 1 }} 
+                transition={{ duration: 1 }}
+                />
+                </div>
+
+                <div className='content-container'>
+                    <h4>Digital marketing connects businesses to a global audience, turning opportunities into lasting growth. 
+                        Our mission is to empower brands with strategies that boost visibility and build authentic connections. 
+                        Together, we drive meaningful success that endures.</h4>
+                        <p>"In every step toward growth, aim not only to achieve but to inspire. 
+                            True success lies in connections that spark change and leave a lasting impact."</p>
+                </div>
+            </section>
+
             <section className="price-tag-service">
                 <ServiceSection />
 
             </section>
 
+            <section className='patner-div'>
+                <div className='text-section-container'>
+                    <h3>Who Trust Us?</h3>
+                    <p>A few brands confided in us to deal with their computerized impression and construct their business.</p>
+                    <div className='animated-check-button'>
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        See Our Brands
+                    </div>
+
+                </div>
+                <div className='image-patner-div'>
+                    <img src="/assest/patner.png" alt="" />
+                </div>
+
+            </section>
+
             {/* Testimonials Section */}
             <section className="testimonials-section">
-                <h2>What Our Clients Say</h2>
-                <div className="testimonials">
-                    <motion.div className="testimonial" whileHover={{ y: -10 }}>
-                        <p>“Our web traffic increased by 200% within months!”</p>
-                        <h4>- John D.</h4>
-                    </motion.div>
-                    <motion.div className="testimonial" whileHover={{ y: -10 }}>
-                        <p>“Exceptional service with a fantastic team!”</p>
-                        <h4>- Sarah M.</h4>
-                    </motion.div>
-                </div>
+            <h2>What Our Client Say</h2>
+            <TestimonialCarousel />
+          
             </section>
 
             {/* Footer */}

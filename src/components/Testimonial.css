@@ -1,0 +1,37 @@
+.testimonial-carousel {
+    display: flex;
+    animation: scrollTestimonials 20s linear infinite;
+    padding: 2rem;
+  }
+  
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    padding: 1.5rem;
+    margin: 0 10px;
+    background-image: linear-gradient(63deg, rgb(121, 199, 255)16.4%, rgb(249, 178, 241)64.5%);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  .review {
+    font-style: italic;
+    font-size: 17px;
+    color: #000;
+  }
+  
+  .client-name {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #fb7b03;
+  }
+  
+  @keyframes scrollTestimonials {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  

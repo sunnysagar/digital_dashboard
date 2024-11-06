@@ -7,8 +7,15 @@ const Header = () => {
     return (
         <header className="header">
             <div className="header-left">
-                <h1 className="company-name">Innovoa Place</h1>
+            <div className="logo-title">
+                <img src="/assest/logo.png" alt="logo" />
+
+                <div className="title-sub">
+                <h1 className="company-name">Dynamix Hub</h1>
                 <p className="subtitle">Innovating Your Digital Future</p>
+                </div>
+            </div>
+                
             </div>
             <nav className="nav-links">
                 {["Home", "Services", "Career", "Contact Us", "About Us", "Client Case Study"].map((item, index) => (

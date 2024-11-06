@@ -237,42 +237,192 @@ body {
     align-items: center;
 }
 
+.static-positive-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+    background-image: linear-gradient(63deg, rgb(63, 94, 244)16.4%, rgb(70, 1, 62)64.5%);
+    color: #ffffff;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.3);
+}
+.image-container{
+    flex: 1;
+}
+.panel-image{
+    width: 55%;
+}
+
+.content-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+
+}
+
+.content-container p{
+    color: #c0e604;
+}
+
+.patner-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-section-container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-section-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0.6rem 2rem;
+}
+
+.text-section-container h3{
+    color: #f96d10;
+    font-size: 2rem;
+}
+
+.text-section-container p{
+    width: 80%;
+    color: #000;
+    font-size: 1.1rem;
+}
+
+.animated-check-button{
+    position: relative;
+   
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fa2718;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 2px rgba(11, 11, 11, 0.748);
+}
+
+.animated-check-button:hover{
+    background: linear-gradient(63deg, rgb(15, 1, 105), rgb(82, 1, 73));
+    color: #fff;
+    border-radius: 5px;
+    
+}
+
+.animated-check-button span{
+    position: absolute;
+    display: block;
+}
+
+.animated-check-button span:nth-child(1)
+{
+    top:0;
+    left:-100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent, #034ff4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1
+{
+    0%{left: -100%;}
+    50%,100%{left:100%}
+}
+
+.animated-check-button a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent, #034ff4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+
+}
+@keyframes btn-anim2
+{
+     0% {top: -100% }
+    50%,100%{top: 100% }
+}
+.animated-check-button span:nth-child(3)
+{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#034ff4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+@keyframes btn-anim3
+{
+    0% {right: -100%;}
+    50%,100%{right: 100%;}
+}
+.animated-check-button span:nth-child(4)
+{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #034ff4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+@keyframes btn-anim4 {
+    0% {bottom: -100%;}
+    50%, 100%
+    {
+        bottom: 100%;
+    }
+    
+}
+
+.image-patner-div{
+   width: 70%;
+   height: 50%;
+   
+}
+
+.image-patner-div img{
+    width: 90%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+}
+
 /* Testimonials Section */
 .testimonials-section {
+    display: flex;
+    flex-direction: column;
     padding: 3rem 1.5rem;
    
 }
 
-.testimonials {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+.testimonials-section div{
+    z-index: 1;
 }
 
-.testimonial {
-    width: 45%;
-    background-color: white;
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
 
-.testimonial:hover {
-    transform: translateY(-10px);
-}
 
-.testimonial p {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 1rem;
-}
-
-.testimonial h4 {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #666;
-}
 
 .price-tag-service{
     background:#fff;
