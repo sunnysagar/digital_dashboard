@@ -15,7 +15,11 @@
     color: #fff;
     text-transform: uppercase;
     margin-bottom: 2rem;
-    background: -webkit-linear-gradient(#080200, #1f002d);
+    
+        background: linear-gradient(#080200, #1f002d);
+        color: transparent;
+        background-clip: text;  /* Some support in Firefox as of recent versions */
+      
 }
 
 /* Plan List */

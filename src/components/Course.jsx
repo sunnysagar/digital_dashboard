@@ -44,19 +44,19 @@ const CourseContent = () => {
     const interval = setInterval(() => {
       setCurrentGroup((prevGroup) => (prevGroup === 0 ? 1 : 0));
     }, 7000); // 7 seconds for each group
-
+  
     return () => clearInterval(interval); // Clear interval on unmount
-  }, []);
-
+  }, []); // No need to add dependencies if groups are constant
+  
   useEffect(() => {
     // Switch between items within a group every 7 seconds
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % (currentGroup === 0 ? servicesGroup1.length : servicesGroup2.length));
     }, 7000); // 7 seconds for each service
-
+  
     return () => clearInterval(interval); // Clear interval on unmount
-  }, [currentGroup]);
-
+  }, [currentGroup, servicesGroup1.length, servicesGroup2.length]); // Add length to dependencies
+  
   // Get the current group and course based on the state
   const services = currentGroup === 0 ? servicesGroup1 : servicesGroup2;
 
