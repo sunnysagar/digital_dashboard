@@ -46,7 +46,7 @@ const CourseContent = () => {
     }, 7000); // 7 seconds for each group
   
     return () => clearInterval(interval); // Clear interval on unmount
-  }, []); // No need to add dependencies if groups are constant
+  }, [currentIndex]); // No need to add dependencies if groups are constant
   
   useEffect(() => {
     // Switch between items within a group every 7 seconds
