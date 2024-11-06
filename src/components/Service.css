@@ -16,8 +16,6 @@
     text-transform: uppercase;
     margin-bottom: 2rem;
     background: -webkit-linear-gradient(#080200, #1f002d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 /* Plan List */
