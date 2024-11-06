@@ -76,19 +76,22 @@ body {
 }
 
 .cta-button {
-    background-color: #2eb202;
+    background-image: linear-gradient(135deg, #f65b13, #fae31a);
     color: white;
     border: none;
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: background-color 0.3s ease;
     font-weight: bold;
+
+    box-shadow: 0px 0px 7px rgba(245, 241, 246, 0.826);
 }
 
 .cta-button:hover {
-    background-color: #e67600;
+    background-image: linear-gradient(135deg, #65025b, #014805);
+    box-shadow: 0px 2px 12px rgba(245, 241, 246, 0.826);
 }
 
 /* Services Section */

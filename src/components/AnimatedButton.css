@@ -3,7 +3,7 @@
     font-size: 1rem;
     font-weight: 600;
     color: #0c0c0c; /* Base color for text */
-    background-image: linear-gradient(135deg, #9333ea, #3b82f6);;
+    background-image: linear-gradient(135deg, #9333ea, #3b82f6);
     border: none; /* Removing border for a cleaner look */
     border-radius: 30px; /* Full-rounded button */
     cursor: pointer;
