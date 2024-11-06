@@ -10,13 +10,14 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
     overflow-x: hidden;
-    background-color: #fff;
+    background: #fff;
+   
     
 }
 
 .landing-page {
     text-align: center;
-    background-color: #fff;
+
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -93,7 +94,7 @@ body {
 /* Services Section */
 .services-section {
     padding: 3rem 1.5rem;
-    background-color: #f9f9f9;
+    background-color: #fff;
 }
 
 .services-section h2 {
@@ -103,7 +104,8 @@ body {
 
 .services {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 15px;
     margin-top: 2rem;
 }
 
@@ -112,12 +114,17 @@ body {
     border-radius: 8px;
     padding: 1.5rem;
     width: 25%;
-    box-shadow: inset  10px 7px rgba(201, 13, 253, 0.826);
-    transition: transform 0.3s ease;
+    box-shadow: 5px 8px 8px rgba(201, 13, 253, 0.748);
+    transition: all 0.3s ease;
 }
 
 .service:hover{
     box-shadow: 0px 10px 7px rgba(201, 13, 253, 0.826);
+}
+
+.seo{
+    border-radius: 15px;
+    box-shadow: 5px 8px 25px rgba(201, 13, 253, 0.748);
 }
 
 .service img {
@@ -134,6 +141,8 @@ body {
 .service p {
     font-size: 1.1rem;
     color: #0c0c0c;
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .services:hover {
@@ -214,10 +223,24 @@ body {
     color: #edc202;
 }
 
+.course-section{
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* Testimonials Section */
 .testimonials-section {
     padding: 3rem 1.5rem;
-    background-color: #eeeeee;
+   
 }
 
 .testimonials {
@@ -252,7 +275,7 @@ body {
 }
 
 .price-tag-service{
-    background: none;
+    background:#fff;
 }
 
 /* Footer */
