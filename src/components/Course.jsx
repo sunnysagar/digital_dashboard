@@ -44,7 +44,7 @@ const CourseContent = () => {
     // Switch between groups every 7 seconds
     const interval = setInterval(() => {
       setCurrentGroup((prevGroup) => (prevGroup === 0 ? 1 : 0));
-    }, 10000); // 10 seconds for each group
+    }, 7000); // 7 seconds for each group
 
     return () => clearInterval(interval); // Clear interval on unmount
   }, []);
