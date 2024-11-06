@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAdd } from '@fortawesome/free-solid-svg-icons';
+
 import './Course.css';
-import { FaAd, FaAddressBook, FaPlus } from 'react-icons/fa';
+import { FaPlus } from 'react-icons/fa';
 
 const CourseContent = () => {
   const [currentGroup, setCurrentGroup] = useState(0); // To manage group switching
