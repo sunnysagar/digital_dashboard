@@ -2,7 +2,7 @@
 
 ## Overview
 
-Innovoa Place is a dynamic and interactive digital marketing platform designed to help businesses enhance their online presence and engage with a broader audience. This web application allows users to view various services offered by the company, get an idea about the team and the company, and seamlessly navigate through the features with a smooth user experience. The front-end of the project is built using React.js, providing a responsive and scalable design, making it easy to integrate additional features and services in the future.
+Digital Tech Connect is a dynamic and interactive digital marketing platform designed to help businesses enhance their online presence and engage with a broader audience. This web application allows users to view various services offered by the company, get an idea about the team and the company, and seamlessly navigate through the features with a smooth user experience. The front-end of the project is built using React.js, providing a responsive and scalable design, making it easy to integrate additional features and services in the future.
 
 ## Deployed URL
 [Netlify](https://digi-land-board.netlify.app/)
