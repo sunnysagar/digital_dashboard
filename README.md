@@ -1,4 +1,4 @@
-# Digital Tech Connect - Digital Marketing Web App
+# DigitalTechConnect - Digital Marketing Web App
 
 ## Overview
 
